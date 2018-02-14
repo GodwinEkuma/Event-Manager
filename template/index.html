@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Event Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <body>
+    <!-- The navigation bar begin -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class="navbar-logo-img mr-2" alt="">
+            Event Manager
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="create-event.html" class="nav-link create-recipe-link">Create Event <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="event-centers.html">Event Centers <span class="sr-only">(current)</span></a>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The navigation bar ending -->
+
+    <!-- Jubotoron section Begins -->
+    <section class="jumbotron jumbotron-fluid text-center" id="jumbotron">
+      <div class="container">
+        <img src="images/logo.png" class="jumbotron-logo img-fluid p-3">
+        <h1 class="display-3 mb-2 hero-heading"> Event Manager</h1>
+
+        <p class="lead display-4 wow bounceInUp mb-5 hero-sub-heading" data-wow-duration="2s">Create and manage events with no stress!</p>
+        <div>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal"> Get Started </button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal"> Sign In </button>
+        </div>
+      </div>
+    </section>
+    <!-- Jubotoron section Ends -->
+
+    <!-- Sign Up Begins -->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row justify-content-center">
+              <form>
+                <h3 class="text-center mx-3">Register</h3>
+                <div class="form-group">
+                  <input type="text" name="fname" class="form-control" id="fname-input" placeholder="Firstname">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="lname" class="form-control" id="lname-input" placeholder="Lastname">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="eamil-input" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="form-control" id="password-input"  placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="confirmpassword" class="form-control" id="confirm-password-input"  placeholder="Confrim Password">
+                </div>
+                <div class="form-group text-center">
+                  <button class="btn mb-3 btn-primary form-control" type="submit">Register</button>   
+                    <span class="mt-5 h6 mr-3"><a href="" role="button" data-toggle="modal" data-target="#sign-in-modal" data-dismiss="modal">Already have an account? Login</a></span>                              
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up Ends -->
+
+    <!-- Sign In Begins -->
+    <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row justify-content-center">
+              <form>
+                <h3 class="text-center mx-3">Sign In</h3>
+                <div class="form-group">
+                  <input type="text" name="fname" class="form-control" id="fname-input" placeholder="Firstname">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="lname" class="form-control" id="lname-input" placeholder="Lastname">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="eamil-input" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="form-control" id="password-input"  placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="confirmpassword" class="form-control" id="confirm-password-input"  placeholder="Confrim Password">
+                </div>
+                <div class="form-group text-center">
+                  <button class="btn mb-3 btn-primary form-control" type="submit">Sign In</button>   
+                    <span class="mt-5 h6 mr-3"><a href="" role="button" data-toggle="modal" data-target="#sign-up-modal" data-dismiss="modal">Don't have an account? Register</a></span>                              
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Event Centers -->
+    <section>
+      <div class="container py-5 mb-5 justify-content-center">
+        <h1 class="display-4 text-center mb-5 wow fadeInDown ">
+          <i class="ion ion-bookmark"></i>
+          Featured Event Centers
+        </h1>
+        <div class="row justify-content-center">
+          <div class="col-sm">
+            <div class="card  wow fadeIn" data-wow-duration="4s" style="width: 20rem;">
+              <img class="card-img-top" src="images/event-1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Brava Event Center</h4>
+                <p class="card-text lead">
+                 <i class="ion ion-ios-location"></i>
+                 Ikeja, Lagos</p>
+                <div class="row">
+                  <div class="col-sm text-left">
+                    <p class="lead  d-flex flex-column">500 <span> Guests </span></p>
+                  </div>
+                  <div class="col-sm text-right">
+                    <a href="#" class="btn btn-primary">More Details</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card  wow fadeIn" data-wow-duration="4s" style="width: 20rem;">
+              <img class="card-img-top" src="images/event-2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Euphoria Event Place</h4>
+                <p class="card-text lead">
+                 <i class="ion ion-ios-location"></i>
+                 Ikeja, Lagos</p>
+                <div class="row">
+                  <div class="col-sm text-left">
+                    <p class="lead  d-flex flex-column">500 <span> Guests </span></p>
+                  </div>
+                  <div class="col-sm text-right">
+                    <a href="#" class="btn btn-primary">More Details</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card  wow fadeIn" data-wow-duration="4s" style="width: 20rem;">
+              <img class="card-img-top" src="images/event-3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Classique Events Place </h4>
+                <p class="card-text lead">
+                 <i class="ion ion-ios-location"></i>
+                 Ikeja, Lagos</p>
+                <div class="row">
+                  <div class="col-sm text-left">
+                    <p class="lead  d-flex flex-column">500 <span> Guests </span></p>
+                  </div>
+                  <div class="col-sm text-right">
+                    <a href="#" class="btn btn-primary">More Details</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Event Center Ends -->
+
+    <!-- Footer Begins -->
+    <section class="footer py-3">
+      <div class="container text-center">
+        <p class="lead">Event Manager App by Godwin Ekuma: Aspiring Andela Developer</p>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+     new WOW().init();
+      $("#jumbotron").vegas({
+        timer: false,
+        shuffle: true,
+        transition: 'fade',
+        animation: 'kenburns',
+        slides: [
+            { src: 'images/banner-1.jpg' },
+            { src: 'images/banner-2.jpg' },
+            { src: 'images/banner-3.jpg' },
+            { src: 'images/banner-4.jpg' },
+            { src: 'images/banner-5.jpg' },
+            { src: 'images/banner-6.jpg' }
+        ],
+        overlay: 'images/01.png' 
+    });
+    </script>
+  </body>
+</html>

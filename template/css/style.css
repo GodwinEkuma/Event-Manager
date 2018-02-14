@@ -1,0 +1,72 @@
+.navbar-custom{
+  background-color: #563D7C;
+  color: #fff;
+}
+.navbar-logo-img{
+	width: 50px;
+  height: 50px;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    font-weight: 700;
+}
+.jumbotron{
+	height: 88vh;
+	max-height: 88vh;
+	}
+	
+	
+
+.jumbotron-logo{
+	height: 80px;
+	width: 80px;
+	max-height: 80px;
+	max-width: 80px;
+	border-radius: 50%;
+	background-color: #563D7C;
+}
+.hero-heading, .hero-sub-heading{
+	color: #fff;
+}
+.btn{
+	border:1px solid #563D7C;;
+}
+.btn-primary{
+	background-color: #563D7C;
+}
+ .ion {
+  color: #563D7C;
+}
+.footer{
+	color: #fff;
+	background-color: #563D7C;
+}
+.navbar-profile-image{
+	height: 30px
+	max-height:30px;
+	width: 30px;
+	max-width: 30px;
+}
+.create-event-heading{
+	color: 563D7C;
+}
+.ion-trash-a{
+	color: #e24d3f;
+}
+.page-item{
+	color: #e24d3f;
+}
+.page-link{
+	color: #e24d3f;
+}
+.page-link:active{
+	background-color:  #e24d3f;
+}

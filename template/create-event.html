@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Event Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <body>
+    <!-- The navigation bar begin -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class="navbar-logo-img mr-2" alt="">
+            Event Manager
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link create-recipe-link">Events <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="create-event.html" class="nav-link create-recipe-link">Create Event <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event-centers-admin.html">Event Centers <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="create-event-center.html">Create Event Centers <span class="sr-only">(current)</span></a>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </form>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img class="mr-2 navbar-profile-image rounded-circle" src="images/avatar.jpg" alt="Event App Developer">
+                      Godwin Ekuma
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- The navigation bar Ends -->
+
+   <!-- Create Event Begins -->
+   <section class="py-5">
+     <div class="container">
+       <div class="row justify-content-center">
+          <h1 class="text-center display-4 mb-3 create-event-heading">Create an Event</h1>
+       </div>
+       <div class="row justify-content-center">
+         <div class="col-md-10 col-lg-10">
+           <div class="card" >
+            <img class="card-img-top" src="images/create-event-image.svg" alt="Card image cap">
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="event-name">Event Name</label>
+                      <input type="text" name="event-name" class="form-control" id="event-name" placeholder="Event Name" required>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="start-date">Start Date</label>
+                      <input type="date" name="start-date" class="form-control" id="start-date" placeholder="Start Date" required>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="end-date">End Date</label>
+                      <input type="date" name="end-date" class="form-control" id="end-date" placeholder="End Date" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="event-description">Event Description</label>
+                      <textarea class="form-control" id="event-description" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                     <div class="form-group">
+                      <label for="select-venue">Select Event Center</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Bravo Event Place</option>
+                        <option>Classique Event Place</option>
+                        <option>Euphoria Event Place</option>
+                        <option>Koga Event Hall</option>
+                        <option>POWA Multipurpose Hall</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="event-image">Choose Event Image</label>
+                      <input type="file" class="form-control-file" id="event-image">
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mx-auto form-control">Create</button>
+              </form>
+              
+            </div>
+          </div>
+
+         </div>
+       </div>
+     </div>
+  </section>
+
+    <!-- Footer Begins -->
+    <section class="footer py-3">
+      <div class="container text-center">
+        <p class="lead">Event Manager App by Godwin Ekuma: Aspiring Andela Developer</p>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    </body>
+</html>
